@@ -1,0 +1,34 @@
+<app-header></app-header>
+<app-nav></app-nav>
+
+<div id="grid-container">
+    <div class="grid-item">
+        <h5 class="welcome">Welcome to the freshly grown products of Cluj-Napoca!</h5>
+        <h5 class="about">Purely grown by gentle sunlight, richly mineralized water and the powerful nutrients of the Romanian soil, 
+            freshly grown produce arrives at your door before you can put your apron on!<br>
+            Order your favorite fruits and vegetables and do your body the favor of energizing itself with a fresh, healthy meal.<br>
+        </h5>
+        <h5 class="contact">
+            Are you a local farmer and want to work with us?<br>
+            Contact us at contact@freshly.grown.ro
+        </h5>
+
+    </div>
+    <div class="grid-item">
+        <div class="carousel-container">
+            <div class="carousel-slide" *ngFor="let slide of slides; let j = index;" [class.active]="j === currentSlideIndex">
+              <img [src]="slide.imageUrl">
+            </div>
+            <a class="carousel-prev" (click)="prevSlide()">&#10094;</a>
+            <a class="carousel-next" (click)="nextSlide()">&#10095;</a>
+          </div>
+    </div>
+    <div class="grid-item">
+        <img class="image-cluj" src="../../../assets/img/cluj2.jpg" alt="cluj">   
+    </div>
+    <div class="grid-item">
+        <img class="image-cluj" src="../../../assets/img/cluj4.jpg" alt="cluj">   
+    </div>
+</div>
+
+<app-footer></app-footer>

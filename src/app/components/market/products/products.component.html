@@ -1,0 +1,29 @@
+<div class="card-top container-fluid">
+    <div class="container d-flex">
+        <div class="class-item">
+            <a href="#">
+            <img src="../../../../assets/img/fruit_icon.png" alt="fruit icon">
+            <h6>Fruits</h6>
+            </a>
+        </div>
+        <div class="class-item">
+            <a href="#">
+            <img src="../../../../assets/img/vegetable_icon.png" alt="vegetable icon">
+            <h6>Veggies</h6>
+            </a>
+        </div>
+        <div class="container-fluid-products">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let product of productsFromDB">
+                <mat-card>
+                  <img src="{{ product.url }}" alt="{{ product.name }}" mat-card-image>
+                  <mat-card-content>
+                    <h6 class="product-name">{{ product.name }}</h6>
+                    <h6 class="price">{{ product.price }}</h6>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+            </div>
+          </div> 
+    </div>
+</div>
