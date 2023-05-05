@@ -6,3 +6,7 @@ Home Page
 
 Market Page
 ![image](https://user-images.githubusercontent.com/96740056/236580557-ba48f708-e44e-4a62-99b5-919a72ceabfe.png)
+
+Products are retrieved from Firestore:
+![image](https://user-images.githubusercontent.com/96740056/236580909-91a14b78-2a69-4ab9-8c90-3dd2d518d40b.png)
+
